@@ -47,6 +47,7 @@ Marketing website for Narthbugz, a time-tracking and forecasting tool for develo
 pnpm dev        # Start dev server
 pnpm build      # Build for production
 pnpm preview    # Preview production build
+pnpm a11y       # Run accessibility checks (requires dev server running)
 ```
 
 ## Project Structure

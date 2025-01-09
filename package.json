@@ -6,9 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "a11y": "axe http://localhost:4321/ http://localhost:4321/features http://localhost:4321/how-it-works http://localhost:4321/pricing"
   },
   "dependencies": {
     "astro": "^5.1.4"
+  },
+  "devDependencies": {
+    "@axe-core/cli": "^4.10.1"
   }
 }
