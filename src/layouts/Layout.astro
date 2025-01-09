@@ -154,7 +154,8 @@
     letter-spacing: -0.01em;
   }
 
-  .button.primary {
+  .button.primary,
+  .nav-links .button.primary {
     background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
     color: white;
     box-shadow:
@@ -247,58 +248,59 @@
     text-align: center;
     color: #4b5563;
     font-size: 0.875rem;
-  }	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		font-family:
-			"Inter",
-			system-ui,
-			-apple-system,
-			BlinkMacSystemFont,
-			"Segoe UI",
-			Roboto,
-			Oxygen,
-			Ubuntu,
-			Cantarell,
-			sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-rendering: optimizeLegibility;
-		background: linear-gradient(
-			135deg,
-			rgba(50, 69, 255, 0.05) 0%,
-			rgba(188, 82, 238, 0.05) 100%
-		);
-		position: relative;
-		overflow-x: hidden;
-	}
+  }
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: linear-gradient(
+      135deg,
+      rgba(50, 69, 255, 0.05) 0%,
+      rgba(188, 82, 238, 0.05) 100%
+    );
+    position: relative;
+    overflow-x: hidden;
+  }
 
-	body::before {
-		content: '';
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-image: url('/src/assets/background.svg');
-		background-size: cover;
-		background-position: center;
-		opacity: 0.7;
-		z-index: -2;
-		animation: pulse 15s ease-in-out infinite;
-	}
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/background.svg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -2;
+    animation: pulse 15s ease-in-out infinite;
+  }
 
-	@keyframes pulse {
-		0% {
-			transform: scale(1);
-		}
-		50% {
-			transform: scale(1.05);
-		}
-		100% {
-			transform: scale(1);
-		}
-	}
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 </style>
