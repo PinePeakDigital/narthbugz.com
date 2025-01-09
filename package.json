@@ -10,6 +10,7 @@
     "a11y": "axe http://localhost:4321/ http://localhost:4321/features http://localhost:4321/how-it-works http://localhost:4321/pricing"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
     "astro": "^5.1.4"
   },
   "devDependencies": {

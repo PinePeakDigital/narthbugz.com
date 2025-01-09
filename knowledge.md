@@ -19,6 +19,7 @@ Marketing website for Narthbugz, a time-tracking and forecasting tool for develo
 - Astro for static site generation
 - TypeScript for type safety
 - PNPM as package manager
+- @astrojs/sitemap for SEO optimization
 
 ## Development Guidelines
 
