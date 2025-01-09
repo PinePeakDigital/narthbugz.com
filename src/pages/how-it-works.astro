@@ -1,0 +1,154 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<div class="container">
+		<h1>How It Works</h1>
+		
+		<div class="steps-grid">
+			<div class="step">
+				<div class="step-icon">1</div>
+				<h2>Connect Your Tools</h2>
+				<p>Integrate Narthbugz with your development workflow in minutes. We support all major IDEs and version control systems.</p>
+				<ul>
+					<li>VS Code, IntelliJ, and other IDE plugins</li>
+					<li>Git integration</li>
+					<li>JIRA and other project management tools</li>
+					<li>Simple API for custom integrations</li>
+				</ul>
+			</div>
+
+			<div class="step">
+				<div class="step-icon">2</div>
+				<h2>Automatic Time Tracking</h2>
+				<p>Our tools silently track time as your team works, requiring zero manual input from developers.</p>
+				<ul>
+					<li>IDE activity monitoring</li>
+					<li>Git commit association</li>
+					<li>Smart idle detection</li>
+					<li>Task context awareness</li>
+				</ul>
+			</div>
+
+			<div class="step">
+				<div class="step-icon">3</div>
+				<h2>Data Analysis</h2>
+				<p>We analyze your team's historical data to build accurate time-series models of productivity.</p>
+				<ul>
+					<li>Task completion patterns</li>
+					<li>Team velocity metrics</li>
+					<li>Seasonal variations</li>
+					<li>Developer specializations</li>
+				</ul>
+			</div>
+
+			<div class="step">
+				<div class="step-icon">4</div>
+				<h2>Monte Carlo Simulation</h2>
+				<p>Using your team's actual data, we simulate thousands of possible futures to generate accurate predictions.</p>
+				<ul>
+					<li>Confidence intervals</li>
+					<li>Risk assessment</li>
+					<li>Timeline forecasting</li>
+					<li>Resource allocation</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 4rem 2rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0 0 3rem;
+		text-align: center;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: 1.1;
+		letter-spacing: -0.02em;
+	}
+
+	.steps-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.step {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 2rem;
+		border-radius: 1rem;
+		backdrop-filter: blur(10px);
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+
+	.step:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	}
+
+	.step-icon {
+		width: 3rem;
+		height: 3rem;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	h2 {
+		margin: 0 0 1rem;
+		font-size: 1.5rem;
+		color: #111827;
+		font-weight: 700;
+		letter-spacing: -0.01em;
+	}
+
+	p {
+		margin: 0 0 1.5rem;
+		color: #4b5563;
+		line-height: 1.6;
+		font-size: 1.125rem;
+	}
+
+	ul {
+		margin: 0;
+		padding-left: 1.5rem;
+		color: #4b5563;
+		line-height: 1.6;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 2rem 1rem;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.steps-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
