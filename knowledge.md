@@ -44,6 +44,7 @@ Marketing website for Narthbugz, a time-tracking and forecasting tool for develo
 - Keep components in src/components
 - Use .astro files for static components
 - Maintain mobile-first responsive design
+- Use flex layout with min-height: 100vh on body and margin-top: auto on footer to ensure footer sticks to bottom
 
 ### Performance
 - Optimize images before adding to assets
