@@ -1,0 +1,259 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<div class="container">
+		<h1>Simple, Transparent Pricing</h1>
+		
+		<div class="pricing-grid">
+			<div class="plan">
+				<div class="plan-header">
+					<h2>Starter</h2>
+					<div class="price">
+						<span class="amount">$29</span>
+						<span class="period">/month</span>
+					</div>
+					<p>Perfect for small teams just getting started</p>
+				</div>
+				<ul class="features">
+					<li>Up to 5 team members</li>
+					<li>Basic time tracking</li>
+					<li>Simple forecasting</li>
+					<li>Email support</li>
+				</ul>
+				<a href="#signup" class="button primary">Start Free Trial</a>
+			</div>
+
+			<div class="plan featured">
+				<div class="plan-header">
+					<div class="badge">Most Popular</div>
+					<h2>Pro</h2>
+					<div class="price">
+						<span class="amount">$79</span>
+						<span class="period">/month</span>
+					</div>
+					<p>For growing teams that need more power</p>
+				</div>
+				<ul class="features">
+					<li>Up to 20 team members</li>
+					<li>Advanced time tracking</li>
+					<li>Monte Carlo forecasting</li>
+					<li>Priority support</li>
+					<li>Custom integrations</li>
+					<li>Advanced analytics</li>
+				</ul>
+				<a href="#signup" class="button primary">Start Free Trial</a>
+			</div>
+
+			<div class="plan">
+				<div class="plan-header">
+					<h2>Enterprise</h2>
+					<div class="price">
+						<span class="contact">Contact Us</span>
+					</div>
+					<p>Custom solutions for large organizations</p>
+				</div>
+				<ul class="features">
+					<li>Unlimited team members</li>
+					<li>Enterprise-grade security</li>
+					<li>Advanced forecasting</li>
+					<li>24/7 priority support</li>
+					<li>Custom integrations</li>
+					<li>Dedicated account manager</li>
+					<li>On-premise deployment</li>
+				</ul>
+				<a href="#contact" class="button secondary">Contact Sales</a>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 4rem 2rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0 0 3rem;
+		text-align: center;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: 1.1;
+		letter-spacing: -0.02em;
+	}
+
+	.pricing-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.plan {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 2rem;
+		border-radius: 1rem;
+		backdrop-filter: blur(10px);
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	.plan.featured {
+		background: rgba(255, 255, 255, 0.9);
+		transform: scale(1.05);
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	}
+
+	.plan:hover {
+		transform: translateY(-5px);
+	}
+
+	.plan.featured:hover {
+		transform: scale(1.05) translateY(-5px);
+	}
+
+	.badge {
+		position: absolute;
+		top: -12px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 1rem;
+		font-size: 0.875rem;
+		font-weight: 600;
+	}
+
+	.plan-header {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	h2 {
+		margin: 0 0 1rem;
+		font-size: 1.5rem;
+		color: #111827;
+		font-weight: 700;
+		letter-spacing: -0.01em;
+	}
+
+	.price {
+		margin: 1rem 0;
+	}
+
+	.amount {
+		font-size: 3rem;
+		font-weight: 800;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		letter-spacing: -0.02em;
+	}
+
+	.period {
+		color: #4b5563;
+		font-size: 1.125rem;
+	}
+
+	.contact {
+		font-size: 1.5rem;
+		font-weight: 700;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.plan-header p {
+		color: #4b5563;
+		margin: 1rem 0 0;
+		font-size: 1.125rem;
+		line-height: 1.6;
+	}
+
+	.features {
+		margin: 0 0 2rem;
+		padding: 0;
+		list-style: none;
+		flex-grow: 1;
+	}
+
+	.features li {
+		margin: 0.75rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: #4b5563;
+		line-height: 1.6;
+	}
+
+	.features li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: #3245ff;
+		font-weight: bold;
+	}
+
+	.button {
+		padding: 0.875rem 1.75rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.2s;
+		font-size: 1.0625rem;
+		letter-spacing: -0.01em;
+		text-align: center;
+		display: block;
+	}
+
+	.button.primary {
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		color: white;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+
+	.button.primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	}
+
+	.button.secondary {
+		border: 1px solid #3245ff;
+		color: #3245ff;
+	}
+
+	.button.secondary:hover {
+		background: rgba(50, 69, 255, 0.1);
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 2rem 1rem;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.pricing-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.plan.featured {
+			transform: none;
+		}
+
+		.plan.featured:hover {
+			transform: translateY(-5px);
+		}
+	}
+</style>
