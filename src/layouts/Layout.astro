@@ -1,3 +1,6 @@
+---
+import ContactForm from '../components/ContactForm.astro';
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -163,6 +166,11 @@
           <a href="#github">GitHub</a>
         </div>
       </div>
+      <div class="contact-section">
+        <h2>Get in Touch</h2>
+        <ContactForm />
+      </div>
+
       <div class="footer-bottom">
         <p>&copy; 2024 Narthbugz. All rights reserved.</p>
       </div>
@@ -313,6 +321,21 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
+  }
+
+  .contact-section {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    text-align: center;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   footer {

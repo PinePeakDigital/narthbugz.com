@@ -5,6 +5,5 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://narthbugz.com',
-  viewTransitions: true,
-  integrations: [sitemap()]
+  integrations: [sitemap()],
 });

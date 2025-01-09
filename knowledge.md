@@ -20,6 +20,7 @@ Marketing website for Narthbugz, a time-tracking and forecasting tool for develo
 - TypeScript for type safety
 - PNPM as package manager
 - @astrojs/sitemap for SEO optimization
+- Web3Forms for contact form handling (requires access key from web3forms.com)
 
 ## Development Guidelines
 
