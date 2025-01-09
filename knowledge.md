@@ -3,6 +3,13 @@
 ## Project Overview
 Marketing website for Narthbugz, a time-tracking and forecasting tool for development teams. Built with Astro.
 
+## SEO
+- Title: "Narthbugz - Evidence-Based Time Tracking for Dev Teams"
+- Description: "Track development time and forecast project completion with confidence using Monte Carlo simulations."
+- Keywords: time tracking, project management, Monte Carlo simulation, development teams, forecasting, productivity
+- Social image dimensions: 1200x630px
+- Brand colors: #3245ff to #bc52ee (gradient)
+
 ## Key Features
 - Evidence-based forecasting using Monte Carlo simulations
 - Time tracking for development teams
