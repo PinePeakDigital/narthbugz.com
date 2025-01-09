@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <script>
-      // Check for saved dark mode preference
+    <script is:inline>
+      // Immediately set the theme before the page renders
       if (
         localStorage.getItem("darkMode") === "true" ||
         (!localStorage.getItem("darkMode") &&
@@ -20,6 +20,16 @@
       name="description"
       content="Track development time and forecast project completion with confidence using Monte Carlo simulations."
     />
+    <script is:inline>
+      // Immediately set the theme before the page renders
+      if (
+        localStorage.getItem("darkMode") === "true" ||
+        (!localStorage.getItem("darkMode") &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -112,6 +122,7 @@
       </div>
     </footer>
     <script>
+      // Remove the initial theme setting script since it's now handled inline
       const themeToggle = document.getElementById("theme-toggle");
       themeToggle?.addEventListener("click", () => {
         document.documentElement.classList.toggle("dark");
@@ -133,6 +144,7 @@
     max-width: 1200px;
     margin: 0 auto;
     background: var(--bg-primary);
+    transition: background-color var(--transition-speed) ease;
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     margin-top: 1rem;
@@ -145,6 +157,7 @@
   .logo {
     font-size: 1.75rem;
     font-weight: 800;
+    transition: background-color var(--transition-speed) ease;
     background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -312,6 +325,7 @@
   }
 
   :root {
+    --transition-speed: 0.2s;
     --text-primary: #111827;
     --text-secondary: #4b5563;
     --bg-primary: rgba(255, 255, 255, 0.8);

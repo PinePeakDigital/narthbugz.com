@@ -40,6 +40,8 @@ Marketing website for Narthbugz, a time-tracking and forecasting tool for develo
 - Optimize images before adding to assets
 - Use fetchpriority="high" for above-the-fold images
 - Minimize JavaScript usage where possible
+- Use `is:inline` script to set initial theme before page render to prevent flash of unstyled content
+- Enable Astro view transitions for smooth page navigation
 
 ## Commands
 ```bash
