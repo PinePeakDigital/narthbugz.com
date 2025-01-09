@@ -25,8 +25,8 @@ Marketing website for Narthbugz, a time-tracking and forecasting tool for develo
     - Background primary: rgba(255, 255, 255, 0.8)
   - Dark mode:
     - Text primary: #f3f4f6
-    - Text secondary: #d1d5db
-    - Background primary: rgba(17, 24, 39, 0.8)
+    - Text secondary: #d1d5db (ensure all text uses CSS variables for consistent contrast)
+    - Background primary: rgba(17, 24, 39, 0.85)
 - Responsive breakpoint at 768px
 - Use glass-morphism effects for depth (background blur + transparency)
 - Support system and user dark mode preferences
