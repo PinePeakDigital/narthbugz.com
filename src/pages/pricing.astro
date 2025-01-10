@@ -22,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
 					<li>Simple forecasting</li>
 					<li>Email support</li>
 				</ul>
-				<a href="#signup" class="button primary">Start Free Trial</a>
+				<a href={import.meta.env.LEAD_CAPTURE_URL} class="button primary">Start Free Trial</a>
 			</div>
 
 			<div class="plan featured">
@@ -43,7 +43,7 @@ import Layout from '../layouts/Layout.astro';
 					<li>Custom integrations</li>
 					<li>Advanced analytics</li>
 				</ul>
-				<a href="#signup" class="button primary">Start Free Trial</a>
+				<a href={import.meta.env.LEAD_CAPTURE_URL} class="button primary">Start Free Trial</a>
 			</div>
 
 			<div class="plan">
@@ -63,7 +63,7 @@ import Layout from '../layouts/Layout.astro';
 					<li>Dedicated account manager</li>
 					<li>On-premise deployment</li>
 				</ul>
-				<a href="#contact" class="button secondary">Contact Sales</a>
+				<a href="/contact" class="button secondary">Contact Sales</a>
 			</div>
 		</div>
 	</div>

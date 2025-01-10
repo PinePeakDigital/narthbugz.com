@@ -1,7 +1,7 @@
 ---
 ---
 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+    <input type="hidden" name="access_key" value={import.meta.env.WEB3FORMS_ACCESS_KEY}>
     
     <div class="form-group">
         <label for="name">Name</label>
