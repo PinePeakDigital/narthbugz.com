@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nb.com
+    runtime: static
+    buildCommand: pnpm run build
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: true
+    domains:
+      - narthbugz.com
+      - www.narthbugz.com
