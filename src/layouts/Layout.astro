@@ -133,8 +133,12 @@ import ContactForm from "../components/ContactForm.astro";
         <a href="/how-it-works">How It Works</a>
         <a href="/pricing">Pricing</a>
         <a href="https://docs.narthbugz.com">Docs</a>
-        <a href="https://app.narthbugz.com/login" class="button secondary">Login</a>
-        <a href={import.meta.env.LEAD_CAPTURE_URL} class="button primary">Sign Up</a>
+        <a href="https://app.narthbugz.com/login" class="button secondary"
+          >Login</a
+        >
+        <a href={import.meta.env.LEAD_CAPTURE_URL} class="button primary"
+          >Sign Up</a
+        >
       </div>
     </nav>
     <slot />
@@ -437,6 +441,7 @@ import ContactForm from "../components/ContactForm.astro";
   body {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     font-family:
       "Inter",
       system-ui,
