@@ -132,8 +132,8 @@ import ContactForm from "../components/ContactForm.astro";
         <a href="/features">Features</a>
         <a href="/how-it-works">How It Works</a>
         <a href="/pricing">Pricing</a>
-        <a href="https://docs.narthbugz.com">Docs</a>
-        <a href="https://app.narthbugz.com/login" class="button secondary"
+        <a href={import.meta.env.LEAD_CAPTURE_URL}>Docs</a>
+        <a href={import.meta.env.LEAD_CAPTURE_URL} class="button secondary"
           >Login</a
         >
         <a href={import.meta.env.LEAD_CAPTURE_URL} class="button primary"
